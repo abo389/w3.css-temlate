@@ -1,0 +1,229 @@
+/* golobal rule */
+@font-face {
+    font-family: "verdana";
+    src: url("fonts/Verdana.ttf");
+}
+@font-face {
+    font-family: "verdana-bold";
+    src: url("fonts/verdana-bold.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "verdana";
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+}
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+.head {
+    padding-top: 60px;
+}
+.head h3 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+.head hr {
+    border-style: solid;
+    border-color: #eee;
+    margin-bottom: 20px;
+}
+/* end golobal rule */
+/* start header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 2px 0 10px #000;
+    position: fixed;
+    width: 100vw;
+    z-index: 100;
+}
+header .logo {
+    padding: 10px;
+}
+header .logo:hover {
+    background-color: #ccc;
+}
+header .logo span {
+    font-family: "verdana-bold";
+}
+header ul {
+    list-style: none;
+    display: flex;
+}
+header ul li a {
+    display: block;
+    padding: 10px;
+}
+header ul li a:hover {
+    background-color: #ccc;
+}
+/* start header */
+/* start landing */
+.landing {
+    position: relative;
+    letter-spacing: 3px;
+    max-width: 1500px;
+    margin: auto;
+}
+.landing img {
+    width: 100%;
+}
+.landing .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.landing h1 {
+    font-weight: 100;
+}
+.landing span {
+    font-weight: 100;
+    background-color: #00000099;
+    padding: 10px;
+    font-family: "verdana-bold";
+    font-size: 35px;
+    margin-right: 10px;
+}
+/* end landing */
+/* start projects */
+#projects .box-container {
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+#projects .box {
+    position: relative;
+}
+#projects .box img {
+    width: 100%;
+}
+#projects .box p {
+    position: absolute;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    top: 0;
+    left: 0;
+}
+/* end projects */
+/* start about */
+.about {
+    text-transform: capitalize;
+    font-weight: 100;
+}
+.about .cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+.about .cards .card img {
+    width: 100%;
+}
+.about .cards .card h4 {
+    font-size: 22px;
+    padding: 20px 0;
+    font-weight: 100;
+}
+.about .cards .card span {
+    color: #777;
+    display: block;
+    margin-bottom: 20px;
+}
+.about .cards .card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.about .cards .card button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background-color: #eee;
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+}
+.about .cards .card button:hover {
+    background-color: #ccc;
+}
+/* end about */
+/* start contact */
+.contact form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.contact form input {
+    padding: 8px;
+    font-size: 16px;
+    border-style: solid;
+    border-color: #eee;
+}
+.contact form input:focus {
+    outline: none;
+    border-color: #000;
+}
+.contact form input[type="submit"] {
+    background-color: #000;
+    color: #fff;
+    width: fit-content;
+    padding: 8px 15px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.contact img {
+    width: 100%;
+}
+/* end contact */
+/* start footer */
+.footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+.footer a {
+    display: inline-block;
+    color: #fff;
+}
+.footer a:hover {
+    color: rgb(4, 255, 4);
+}
+/* end footer */
+/* start media */
+@media (max-width: 600px) {
+    header ul {
+        display: none;
+    }
+    .landing h1 {
+        display: none;
+    }
+}
+/* end media */
